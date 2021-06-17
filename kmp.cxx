@@ -38,7 +38,6 @@ public:
 int main() {
   KMP kmp;
   vector<int>* lps = kmp.buildLPSArray("AAACAAAAAC");
-
   if (lps != NULL) {
     for(auto each_entry:*lps) {
         cout << each_entry << ", ";
